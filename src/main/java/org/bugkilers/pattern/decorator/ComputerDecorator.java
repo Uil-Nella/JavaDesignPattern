@@ -6,13 +6,11 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package hello;
+package org.bugkilers.pattern.decorator;
 
-
-public class HelloWorld {
-  public static void main(String[] args) {
-
-    Greeter greeter = new Greeter();
-    System.out.println(greeter.sayHello());
-  }
+/**
+ * 电脑组装器------装饰者
+ * Created by liuxinyu on 15/3/23.
+ */
+public abstract class ComputerDecorator implements IComputer {
 }

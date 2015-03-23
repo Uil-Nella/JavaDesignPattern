@@ -6,13 +6,21 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package hello;
+package org.bugkilers.pattern.decorator;
 
+/**
+ * 电脑组装接口
+ * Created by liuxinyu on 15/3/23.
+ */
+public interface IComputer {
+    /**
+     * 组装动作
+     */
+    public String build();
 
-public class HelloWorld {
-  public static void main(String[] args) {
-
-    Greeter greeter = new Greeter();
-    System.out.println(greeter.sayHello());
-  }
+    /**
+     * 花费
+     * @return
+     */
+    public int cost();
 }

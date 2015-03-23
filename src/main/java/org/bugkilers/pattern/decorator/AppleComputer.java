@@ -6,13 +6,19 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package hello;
+package org.bugkilers.pattern.decorator;
 
+/**
+ * Created by liuxinyu on 15/3/23.
+ */
+public class AppleComputer implements IComputer {
+    @Override
+    public String build() {
+        return "-----苹果电脑";
+    }
 
-public class HelloWorld {
-  public static void main(String[] args) {
-
-    Greeter greeter = new Greeter();
-    System.out.println(greeter.sayHello());
-  }
+    @Override
+    public int cost() {
+        return 500;
+    }
 }

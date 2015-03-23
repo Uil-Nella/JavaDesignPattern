@@ -6,13 +6,21 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package hello;
+package org.bugkilers.pattern.decorator;
 
+/**
+ * 组装处理器
+ * Created by liuxinyu on 15/3/23.
+ */
+public class LenovoComputer implements IComputer{
 
-public class HelloWorld {
-  public static void main(String[] args) {
+    @Override
+    public String build() {
+        return "------联想电脑";
+    }
 
-    Greeter greeter = new Greeter();
-    System.out.println(greeter.sayHello());
-  }
+    @Override
+    public int cost() {
+        return 1000;
+    }
 }
