@@ -11,11 +11,11 @@ package org.bugkillers.pattern.proxy;
 /**
  * Created by liuxinyu on 15/3/26.
  */
-public class ProxyTest {
+public class CommonProxyTest {
 
     public static void main(String[] args) {
         //代理对象具有了TargetImpl对象的所有功能
-        Target target = new Proxy();
+        Target target = new CommonProxy();
         target.method();
     }
 }

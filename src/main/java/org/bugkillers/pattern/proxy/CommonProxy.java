@@ -12,11 +12,11 @@ package org.bugkillers.pattern.proxy;
  * 代理类
  * Created by liuxinyu on 15/3/26.
  */
-public class Proxy implements Target {
+public class CommonProxy implements Target {
 
     private Target target;
 
-    public Proxy(){
+    public CommonProxy(){
         this.target = new TargetImpl();
     }
 
