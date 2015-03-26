@@ -13,6 +13,7 @@ package org.bugkilers.pattern.decorator;
  * Created by liuxinyu on 15/3/23.
  */
 public class ComputerDIY {
+
     public static void main(String[] args) {
         IComputer lenovo = new LenovoComputer();
         IComputer mac = new AppleComputer();
