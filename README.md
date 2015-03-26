@@ -8,5 +8,7 @@
 
 设计模式
 * Decorator模式
+ 
+
 * Proxy  代理模式
 
