@@ -6,26 +6,20 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.decorator;
 
 /**
- * 硬盘装饰器
+ * 苹果电脑
  * Created by liuxinyu on 15/3/23.
  */
-public class ComputerHardWare extends ComputerDecorator  {
-    IComputer computer;
-
-    public ComputerHardWare(IComputer computer){
-        this.computer = computer;
-    }
-
+public class AppleComputer implements IComputer {
     @Override
     public String build() {
-        return computer.build()+"-组装硬盘-";
+        return "苹果电脑:";
     }
 
     @Override
     public int cost() {
-        return 1000+computer.cost();
+        return 500;
     }
 }

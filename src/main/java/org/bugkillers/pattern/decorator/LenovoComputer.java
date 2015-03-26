@@ -6,7 +6,7 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.decorator;
 
 /**
  * 联想电脑类

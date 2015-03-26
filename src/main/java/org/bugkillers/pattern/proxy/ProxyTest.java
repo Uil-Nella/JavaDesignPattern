@@ -6,27 +6,16 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.proxy;
 
 /**
- * 电源装饰器
  * Created by liuxinyu on 15/3/26.
  */
-public class ComputerPower extends ComputerDecorator {
+public class ProxyTest {
 
-    IComputer computer;
-
-    public ComputerPower(IComputer computer){
-        this.computer = computer;
-    }
-
-    @Override
-    public String build() {
-        return computer.build()+"-组装电源-";
-    }
-
-    @Override
-    public int cost() {
-        return computer.cost() + 99;
+    public static void main(String[] args) {
+        //代理对象具有了TargetImpl对象的所有功能
+        Target target = new Proxy();
+        target.method();
     }
 }

@@ -6,22 +6,22 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.decorator;
 
 /**
- * CPU装饰器
+ * 硬盘装饰器
  * Created by liuxinyu on 15/3/23.
  */
-public class ComputerCPU extends ComputerDecorator  {
+public class ComputerHardWare extends ComputerDecorator  {
     IComputer computer;
 
-    public ComputerCPU(IComputer computer){
+    public ComputerHardWare(IComputer computer){
         this.computer = computer;
     }
 
     @Override
     public String build() {
-        return computer.build()+"-组装CPU-";
+        return computer.build()+"-组装硬盘-";
     }
 
     @Override

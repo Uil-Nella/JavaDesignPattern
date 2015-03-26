@@ -6,20 +6,12 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.proxy;
 
 /**
- * 苹果电脑
- * Created by liuxinyu on 15/3/23.
+ * 需要代理的接口方法
+ * Created by liuxinyu on 15/3/26.
  */
-public class AppleComputer implements IComputer {
-    @Override
-    public String build() {
-        return "苹果电脑:";
-    }
-
-    @Override
-    public int cost() {
-        return 500;
-    }
+public interface Target {
+    public void method();
 }

@@ -6,21 +6,15 @@
  * Vestibulum commodo. Ut rhoncus gravida arcu.
  */
 
-package org.bugkilers.pattern.decorator;
+package org.bugkillers.pattern.proxy;
 
 /**
- * 电脑组装接口
- * Created by liuxinyu on 15/3/23.
+ * Created by liuxinyu on 15/3/26.
  */
-public interface IComputer {
-    /**
-     * 组装动作
-     */
-    public String build();
+public class TargetImpl implements Target {
 
-    /**
-     * 花费
-     * @return
-     */
-    public int cost();
+    @Override
+    public void method() {
+        System.out.println("目的方法被执行");
+    }
 }
