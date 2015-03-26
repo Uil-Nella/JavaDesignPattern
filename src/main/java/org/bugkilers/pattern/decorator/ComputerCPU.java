@@ -9,6 +9,7 @@
 package org.bugkilers.pattern.decorator;
 
 /**
+ * CPU装饰器
  * Created by liuxinyu on 15/3/23.
  */
 public class ComputerCPU extends ComputerDecorator  {
@@ -20,7 +21,7 @@ public class ComputerCPU extends ComputerDecorator  {
 
     @Override
     public String build() {
-        return computer.build()+"--组装CPU--";
+        return computer.build()+"-组装CPU-";
     }
 
     @Override

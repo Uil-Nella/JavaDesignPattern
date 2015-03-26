@@ -9,17 +9,24 @@
 package org.bugkilers.pattern.decorator;
 
 /**
- * 苹果电脑
- * Created by liuxinyu on 15/3/23.
+ * 电源装饰器
+ * Created by liuxinyu on 15/3/26.
  */
-public class AppleComputer implements IComputer {
+public class ComputerPower extends ComputerDecorator {
+
+    IComputer computer;
+
+    public ComputerPower(IComputer computer){
+        this.computer = computer;
+    }
+
     @Override
     public String build() {
-        return "苹果电脑:";
+        return computer.build()+"-组装电源-";
     }
 
     @Override
     public int cost() {
-        return 500;
+        return computer.cost() + 99;
     }
 }

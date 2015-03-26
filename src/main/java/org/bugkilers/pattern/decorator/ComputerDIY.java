@@ -9,16 +9,26 @@
 package org.bugkilers.pattern.decorator;
 
 /**
+ * DIY电脑
  * Created by liuxinyu on 15/3/23.
  */
 public class ComputerDIY {
     public static void main(String[] args) {
         IComputer lenovo = new LenovoComputer();
-        IComputer HardWare = new AppleComputer();
+        IComputer mac = new AppleComputer();
 
         lenovo = new ComputerCPU(lenovo);
         lenovo = new ComputerHardWare(lenovo);
+        lenovo = new ComputerPower(lenovo);
 
         System.out.println(lenovo.build()+",价格："+lenovo.cost());
+
+        mac = new ComputerCPU(mac);
+        mac = new ComputerCPU(mac);
+        mac = new ComputerHardWare(mac);
+        mac = new ComputerPower(mac);
+        mac = new ComputerPower(mac);
+
+        System.out.println(mac.build()+",价格："+mac.cost());
     }
 }

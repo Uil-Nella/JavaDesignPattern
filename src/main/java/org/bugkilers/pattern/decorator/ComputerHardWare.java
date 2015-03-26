@@ -9,6 +9,7 @@
 package org.bugkilers.pattern.decorator;
 
 /**
+ * 硬盘装饰器
  * Created by liuxinyu on 15/3/23.
  */
 public class ComputerHardWare extends ComputerDecorator  {
@@ -20,7 +21,7 @@ public class ComputerHardWare extends ComputerDecorator  {
 
     @Override
     public String build() {
-        return computer.build()+"--组装硬盘--";
+        return computer.build()+"-组装硬盘-";
     }
 
     @Override

@@ -9,14 +9,14 @@
 package org.bugkilers.pattern.decorator;
 
 /**
- * 组装处理器
+ * 联想电脑类
  * Created by liuxinyu on 15/3/23.
  */
 public class LenovoComputer implements IComputer{
 
     @Override
     public String build() {
-        return "------联想电脑";
+        return "联想电脑:";
     }
 
     @Override
