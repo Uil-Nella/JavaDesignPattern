@@ -14,7 +14,7 @@ package org.bugkillers.pattern.proxy;
 public class CaglibProxyTest {
     public static void main(String[] args) {
         CglibProxy proxy=new CglibProxy();
-        
+
         Target target=(Target)proxy.getInstance(new TargetImpl());
         target.method();
     }
