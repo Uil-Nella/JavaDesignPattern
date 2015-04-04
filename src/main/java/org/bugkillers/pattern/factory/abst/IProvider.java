@@ -11,6 +11,7 @@ package org.bugkillers.pattern.factory.abst;
 import org.bugkillers.pattern.factory.IComputer;
 
 /**
+ * 工厂提供者
  * Created by liuxinyu on 15/4/3.
  */
 public interface IProvider {

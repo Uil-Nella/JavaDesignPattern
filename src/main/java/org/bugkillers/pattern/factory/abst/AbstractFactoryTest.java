@@ -9,6 +9,7 @@
 package org.bugkillers.pattern.factory.abst;
 
 /**
+ * 抽象工厂
  * Created by liuxinyu on 15/4/3.
  */
 public class AbstractFactoryTest {
