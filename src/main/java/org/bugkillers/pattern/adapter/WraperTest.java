@@ -9,16 +9,13 @@
 package org.bugkillers.pattern.adapter;
 
 /**
- *
  * Created by liuxinyu on 15/4/6.
  */
-public class ClassAdapterTest {
-
+public class WraperTest {
     public static void main(String[] args) {
-        Targetable target = new ClassAdapter();
+        Source source = new Source();
+        Targetable target = new Wrapper(source);
         target.method();
         target.methodII();
-
-
     }
 }

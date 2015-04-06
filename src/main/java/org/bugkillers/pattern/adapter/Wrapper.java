@@ -9,16 +9,23 @@
 package org.bugkillers.pattern.adapter;
 
 /**
- *
- * Created by liuxinyu on 15/4/6.
+ * 对象的适配器
  */
-public class ClassAdapterTest {
+public class Wrapper implements Targetable {
 
-    public static void main(String[] args) {
-        Targetable target = new ClassAdapter();
-        target.method();
-        target.methodII();
+	private Source source;
 
+	public Wrapper(Source source){
+		super();
+		this.source = source;
+	}
+	@Override
+	public void methodII() {
+		System.out.println("this is the targetable method!");
+	}
 
-    }
+	@Override
+	public void method() {
+		source.method();
+	}
 }
