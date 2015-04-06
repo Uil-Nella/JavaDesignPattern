@@ -11,7 +11,7 @@ package org.bugkillers.pattern.prototype;
 /**
  * Created by liuxinyu on 15/4/6.
  */
-public abstract class Warlord extends Prototype {
+public abstract class Warlord extends AbstractPrototype {
 
     @Override
     public abstract Warlord clone() throws CloneNotSupportedException;

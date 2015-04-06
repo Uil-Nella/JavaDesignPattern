@@ -11,7 +11,7 @@ package org.bugkillers.pattern.prototype;
 /**
  * Created by liuxinyu on 15/4/6.
  */
-public abstract class Beast extends Prototype {
+public abstract class Beast extends AbstractPrototype {
 
     @Override
     public abstract Beast clone() throws CloneNotSupportedException;

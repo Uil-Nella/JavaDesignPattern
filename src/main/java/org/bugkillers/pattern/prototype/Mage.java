@@ -11,7 +11,7 @@ package org.bugkillers.pattern.prototype;
 /**
  * Created by liuxinyu on 15/4/6.
  */
-public abstract class Mage extends Prototype {
+public abstract class Mage extends AbstractPrototype {
 
     @Override
     public abstract Mage clone() throws CloneNotSupportedException;
