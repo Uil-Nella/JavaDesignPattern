@@ -9,6 +9,7 @@
 package org.bugkillers.pattern.prototype;
 
 /**
+ * 兽类原型
  * Created by liuxinyu on 15/4/6.
  */
 public abstract class Beast extends AbstractPrototype {

@@ -9,6 +9,7 @@
 package org.bugkillers.pattern.prototype;
 
 /**
+ * 军阀原型
  * Created by liuxinyu on 15/4/6.
  */
 public abstract class Warlord extends AbstractPrototype {

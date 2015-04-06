@@ -9,6 +9,7 @@
 package org.bugkillers.pattern.prototype;
 
 /**
+ * 巫师原型
  * Created by liuxinyu on 15/4/6.
  */
 public abstract class Mage extends AbstractPrototype {
