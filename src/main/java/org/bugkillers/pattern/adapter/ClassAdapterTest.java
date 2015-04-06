@@ -18,5 +18,6 @@ public class ClassAdapterTest {
         Targetable target = new ClassAdapter();
         target.method();
         target.methodII();
+        
     }
 }
