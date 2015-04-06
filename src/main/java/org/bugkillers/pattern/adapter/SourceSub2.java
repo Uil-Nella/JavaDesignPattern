@@ -8,6 +8,9 @@
 
 package org.bugkillers.pattern.adapter;
 
+/**
+ * 实现方法2
+ */
 public class SourceSub2 extends AbstractWrapper {
 	public void method2(){
 		System.out.println("the sourceable interface's second Sub2!");

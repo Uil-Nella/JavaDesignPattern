@@ -11,11 +11,15 @@ package org.bugkillers.pattern.adapter;
 /**
  * Created by liuxinyu on 15/4/6.
  */
-public class WraperTest {
+public class InterfaceAdapterTest {
+
     public static void main(String[] args) {
-        Source source = new Source();
-        Targetable target = new Wrapper(source);
-        target.method();
-        target.methodII();
+        Sourceable source1 = new SourceSub1();
+        Sourceable source2 = new SourceSub2();
+
+        source1.method1();
+        source1.method2();
+        source2.method1();
+        source2.method2();
     }
 }

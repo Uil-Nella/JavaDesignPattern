@@ -9,17 +9,23 @@
 package org.bugkillers.pattern.adapter;
 
 /**
- * Created by liuxinyu on 15/4/6.
+ * 对象的适配器
  */
-public class InterfaceAdapter {
+public class ObjectAdapter implements Targetable {
 
-    public static void main(String[] args) {
-        Sourceable source1 = new SourceSub1();
-        Sourceable source2 = new SourceSub2();
+	private Source source;
 
-        source1.method1();
-        source1.method2();
-        source2.method1();
-        source2.method2();
-    }
+	public ObjectAdapter(Source source){
+		super();
+		this.source = source;
+	}
+	@Override
+	public void methodII() {
+		System.out.println("this is the targetable method!");
+	}
+
+	@Override
+	public void method() {
+		source.method();
+	}
 }

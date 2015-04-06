@@ -8,8 +8,14 @@
 
 package org.bugkillers.pattern.adapter;
 
-public abstract class AbstractWrapper implements Sourceable{
+/**
+ * 抽象类 用于实现目标接口
+ */
+public abstract class AbstractWrapper implements Sourceable {
 
-	public void method1(){}
-	public void method2(){}
+    public void method1() {
+    }
+
+    public void method2() {
+    }
 }
