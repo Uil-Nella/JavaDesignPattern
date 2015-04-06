@@ -59,8 +59,8 @@ public class Prototype implements Cloneable, Serializable {
         this.obj = obj;
     }
 
-}
+    class SerializableObject implements Serializable {
+        private static final long serialVersionUID = 1L;
+    }
 
-class SerializableObject implements Serializable {
-    private static final long serialVersionUID = 1L;
 }
