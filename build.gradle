@@ -9,7 +9,7 @@ repositories {
 
 dependencies {
 
-    runtime 'cglib:cglib-nodep:3.1'
+    compile 'cglib:cglib-nodep:3.1'
     compile 'com.google.guava:guava:18.0'
 
 
