@@ -13,6 +13,6 @@ package org.bugkillers.pattern.adapter;
  */
 public class SourceSub1 extends AbstractWrapper {
 	public void method1(){
-		System.out.println("the sourceable interface's first Sub1!");
+		System.out.println("方法1被调用!");
 	}
 }
