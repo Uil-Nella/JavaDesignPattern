@@ -7,6 +7,7 @@
 * 项目构建 gradle
 * 语言描述 Java
 
+
 ### 设计原则
 
 * 1、开闭原则（Open Close Principle）    
