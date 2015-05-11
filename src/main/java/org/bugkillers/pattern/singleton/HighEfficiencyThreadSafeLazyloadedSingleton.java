@@ -35,7 +35,7 @@ public class HighEfficiencyThreadSafeLazyloadedSingleton {
      * @return
      */
     public static HighEfficiencyThreadSafeLazyloadedSingleton getInstance() {
-        if (instance != null) {
+        if (instance == null) {
             synchronized (HighEfficiencyThreadSafeLazyloadedSingleton.class) {
                 instance = new HighEfficiencyThreadSafeLazyloadedSingleton();
             }
