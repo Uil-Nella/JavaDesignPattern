@@ -51,3 +51,4 @@
 
 * Observer 观察者模式
  
+* Bridge 桥接模式
